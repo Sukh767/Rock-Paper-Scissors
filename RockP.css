@@ -1,0 +1,71 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #2d2d2d;
+  color: #fffbfb;
+}
+
+.title {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.move-icon{
+  height: 50px;
+}
+#move-button {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#move-button button {
+  background-color: transparent;
+  border: 5px solid rgb(28, 57, 153);
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 2em;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+#move-button button:focus {
+  outline: none;
+}
+
+button {
+  font-size: 1em;
+  padding: 10px 20px;
+  margin: 20px 0;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.js-result, .js-moves, .js-score {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.result{
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.reset-score-button{
+  background-color: rgb(226, 94, 94);
+  color: black;
+  border: none;
+  font-size: 15px;
+  padding: 10px 15px;
+  cursor: pointer;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="RockP.css">
+    <script src="RPS.js" defer></script>
+    <script src="https://kit.fontawesome.com/ff1d648bf3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <p class="title">Rock Paper Scissors</p>
+    
+    <div id="move-button">
+      <button onclick="playGame('rock');">
+        <i class="fa-solid fa-hand-back-fist" style="color: #FFD43B;"></i>
+      </button>
+  
+      <button onclick="playGame('paper');">
+        <i class="fa-solid fa-hand" style="color: #FFD43B;"></i>
+      </button>
+  
+      <button onclick="playGame('scissors');">
+        <i class="fa-solid fa-hand-scissors" style="color: #FFD43B;"></i>
+      </button>
+    </div>
+    
+    <p class="js-result"></p>
+    <p class="js-moves"></p>
+    <p class="js-score"></p>
+
+    <button onclick="
+      score.wins = 0;
+      score.losses = 0;
+      score.ties = 0;
+      localStorage.removeItem('score');
+      updateScoreElement();
+    " class="reset-score-button">Reset Score</button>
+  </body>
+</html>
